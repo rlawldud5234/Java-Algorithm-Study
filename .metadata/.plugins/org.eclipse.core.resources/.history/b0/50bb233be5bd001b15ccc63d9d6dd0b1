@@ -1,0 +1,21 @@
+import java.util.HashMap;
+
+public class TP47 {
+
+	public static void main(String[] args) {
+		HashMap<K, V> myMap = new HashMap();
+		
+		myMap.put(7, "±è»ó¼ö");
+		myMap.put(36, "ÀÌ½Â¿±");
+		myMap.put(21, "¿À½ÂÈ¯");
+		myMap.put(21, "ÃÖÁö±¤");
+		
+		myMap.remove(7);
+		System.out.println(myMap);
+		
+		myMap.remove(36, "Á¤¿µÃ¶");
+		System.out.println(myMap);
+
+	}
+
+}

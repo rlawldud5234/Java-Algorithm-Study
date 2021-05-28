@@ -1,0 +1,46 @@
+class Node{
+	Node nextNode;
+	int value;
+	
+	Node(int argValue, Node argNextNode){
+		value = argValue;
+		nextNode = argNextNode;
+	}
+}
+
+// Queue class
+class MyQueueListVersion{
+	Node head, tail;
+	int numOfData;
+	
+	MyQueueListVersion(){
+		tail = new Node(0, null);
+		head = new Node(0, tail);
+	}
+	
+	// IsEmpty
+	boolean IsEmpty() {
+		if(numOfData == 0)
+			return true;
+		return false;
+	}
+}
+
+
+// enqueue
+void enqueue(int argValue) {
+	Node temp = head;
+	while(temp.nextNode != tail)
+		temp = temp.nextNode;
+}
+
+// dequeue
+
+public class TP30 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

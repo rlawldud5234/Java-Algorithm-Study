@@ -1,0 +1,43 @@
+// queue 클래스 생성
+class MyCircularQueue{
+	private final int MAX_QUEUE_SIZE;
+	private int queueList[];
+	private boolean isOWRMode;
+	private int startIndex;
+	private int endIndex;
+	private int numOfData;
+	
+	// 생성자
+	MyCircularQueue(){
+		
+		
+	}
+	
+	// 데이터 삽입 : 큐의 제일 마지막 위치에 입력 데이터 삽입
+	boolean enqueue() {
+		
+	}
+	
+	// 데이터 삭제 : 큐의 제일 앞쪽 위치의 데이터 삭제후 반환
+	int dequeue() {
+		
+	}
+	
+	// 문자열 생성
+	public String toString() {
+		
+	}
+	
+}
+
+// 
+
+
+public class TP40 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

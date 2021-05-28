@@ -1,0 +1,42 @@
+class Node{
+	Node nextNode;
+	int value;
+	
+	Node(int argValue, Node argNextNode){
+		value = argValue;
+		nextNode = argNextNode;
+	}
+}
+
+// Queue class
+class MyQueueListVersion{
+	Node head, tail;
+	int numOfData;
+	
+	MyQueueListVersion(){
+		tail = new Node(0, null);
+		head = new Node(0, tail);
+	}
+	
+	boolean IsEmpty() {
+		if(numOfData == 0)
+			return true;
+		return false;
+	}
+}
+
+// isEmpty
+
+// enqueue
+
+
+// dequeue
+
+public class TP30 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

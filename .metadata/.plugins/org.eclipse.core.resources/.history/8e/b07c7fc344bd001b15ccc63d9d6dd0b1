@@ -1,0 +1,38 @@
+public class TP44 {
+
+	public static void main(String[] args) {
+		Set mySet = new HashSet(); // set인 이유는 ? 부모, 자식관계여서
+		
+		while(mySet.size()<6) {
+			mySet.add((int)(Math.random()*45+1));
+		}
+		
+		System.out.println(mySet);
+
+	}
+	
+class Student {
+	int id;
+	String name;
+	
+	Student(int argId, String argName){
+		id = argId;
+		name = argName;
+	}
+	
+	public boolean equals(Object obj) {
+		return this.id == ((Student)obj).id;
+	}
+	
+	public int hashCode() {
+		return Integer.valueOf(id).hashCode();
+	}
+	
+	public String toString() {
+		return id+" "+name;
+	}
+	
+}
+
+	
+}
